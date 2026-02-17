@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Startup Feasibility Engine - Validate Your Startup Idea</title>
+    <meta name="description"
+        content="Get instant AI-powered feasibility analysis for your startup idea. Market analysis, revenue models, competition insights, and success probability in minutes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L2 9L16 16L30 9L16 2Z" fill="url(#gradient1)" />
+                        <path d="M2 23L16 30L30 23L16 16L2 23Z" fill="url(#gradient2)" />
+                        <defs>
+                            <linearGradient id="gradient1" x1="2" y1="2" x2="30" y2="16" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#667EEA" />
+                                <stop offset="1" stop-color="#764BA2" />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="2" y1="16" x2="30" y2="30"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F093FB" />
+                                <stop offset="1" stop-color="#F5576C" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">Feasibility AI</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#analyze" class="btn btn-primary btn-sm">Try Now</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>AI-Powered Startup Analysis</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Validate Your Startup Idea
+                    <span class="gradient-text">In Minutes, Not Months</span>
+                </h1>
+
+                <p class="hero-description">
+                    Get comprehensive AI-driven feasibility reports with market analysis,
+                    revenue models, competition insights, and success probability.
+                    Make data-driven decisions before you invest.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#analyze" class="btn btn-primary btn-lg">
+                        <span>Analyze Your Idea</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M8 7L13 10L8 13V7Z" fill="currentColor" />
+                        </svg>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item glass-card">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Ideas Analyzed</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Accuracy Rate</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-number">2 Min</div>
+                        <div class="stat-label">Avg Analysis Time</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glass-card dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="preview-title">Feasibility Report</div>
+                    </div>
+                    <div class="preview-content">
+                        <div class="metric-row">
+                            <span class="metric-label">Success Probability</span>
+                            <span class="metric-value success">78%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <div class="metric-grid">
+                            <div class="metric-box">
+                                <div class="metric-icon">📊</div>
+                                <div class="metric-text">Market Size: $2.5B</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-icon">🎯</div>
+                                <div class="metric-text">Target: Tech Startups</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-icon">💰</div>
+                                <div class="metric-text">Revenue: SaaS Model</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-icon">🏆</div>
+                                <div class="metric-text">Competition: Medium</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comprehensive Analysis <span class="gradient-text">Powered by AI</span></h2>
+                <p class="section-description">
+                    Our multi-agent AI system analyzes every aspect of your startup idea
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#featureGradient1)" />
+                            <path d="M12 20L18 26L28 14" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Market Analysis</h3>
+                    <p class="feature-description">
+                        Deep dive into market size, trends, opportunities, and growth potential with real-time data
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#featureGradient2)" />
+                            <circle cx="20" cy="20" r="8" stroke="white" stroke-width="2.5" />
+                            <path d="M20 12V20L25 25" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Competition Insights</h3>
+                    <p class="feature-description">
+                        Identify competitors, analyze their strengths, and discover your unique positioning
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#featureGradient3)" />
+                            <path d="M14 26L20 14L26 26" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Revenue Models</h3>
+                    <p class="feature-description">
+                        Get tailored revenue strategies, pricing recommendations, and financial projections
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#featureGradient4)" />
+                            <rect x="12" y="16" width="16" height="12" rx="2" stroke="white" stroke-width="2.5" />
+                            <path d="M16 16V14C16 12.8954 16.8954 12 18 12H22C23.1046 12 24 12.8954 24 14V16"
+                                stroke="white" stroke-width="2.5" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Cost Structure</h3>
+                    <p class="feature-description">
+                        Detailed breakdown of initial costs, burn rate, and funding requirements
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#featureGradient5)" />
+                            <path
+                                d="M20 28C24.4183 28 28 24.4183 28 20C28 15.5817 24.4183 12 20 12C15.5817 12 12 15.5817 12 20C12 24.4183 15.5817 28 20 28Z"
+                                stroke="white" stroke-width="2.5" />
+                            <path d="M20 16V20L23 23" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">GTM Strategy</h3>
+                    <p class="feature-description">
+                        Actionable go-to-market plans with customer acquisition channels and growth tactics
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#featureGradient6)" />
+                            <path d="M20 12L23 18L30 19L25 24L26 31L20 28L14 31L15 24L10 19L17 18L20 12Z" stroke="white"
+                                stroke-width="2.5" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Success Probability</h3>
+                    <p class="feature-description">
+                        AI-calculated success score with best location recommendations and risk assessment
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <svg width="0" height="0">
+            <defs>
+                <linearGradient id="featureGradient1" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#667EEA" />
+                    <stop offset="1" stop-color="#764BA2" />
+                </linearGradient>
+                <linearGradient id="featureGradient2" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#F093FB" />
+                    <stop offset="1" stop-color="#F5576C" />
+                </linearGradient>
+                <linearGradient id="featureGradient3" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#4FACFE" />
+                    <stop offset="1" stop-color="#00F2FE" />
+                </linearGradient>
+                <linearGradient id="featureGradient4" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#43E97B" />
+                    <stop offset="1" stop-color="#38F9D7" />
+                </linearGradient>
+                <linearGradient id="featureGradient5" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#FA709A" />
+                    <stop offset="1" stop-color="#FEE140" />
+                </linearGradient>
+                <linearGradient id="featureGradient6" x1="0" y1="0" x2="40" y2="40">
+                    <stop stop-color="#30CFD0" />
+                    <stop offset="1" stop-color="#330867" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+                <p class="section-description">
+                    Get your comprehensive feasibility report in 3 simple steps
+                </p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card glass-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Describe Your Idea</h3>
+                    <p class="step-description">
+                        Enter your startup idea, target market, and industry. Our AI will understand your vision.
+                    </p>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step-card glass-card">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">AI Analysis</h3>
+                    <p class="step-description">
+                        Our multi-agent AI system analyzes market data, competition, revenue models, and more.
+                    </p>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step-card glass-card">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Get Your Report</h3>
+                    <p class="step-description">
+                        Receive a detailed feasibility report with actionable insights and success probability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="analyze" class="cta-section">
+        <div class="container">
+            <div class="cta-card glass-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Validate Your Idea?</h2>
+                    <p class="cta-description">
+                        Join thousands of entrepreneurs who've made smarter decisions with AI-powered insights
+                    </p>
+                    <form class="idea-form" id="ideaForm">
+                        <div class="form-group">
+                            <label for="idea">Your Startup Idea</label>
+                            <textarea id="idea" name="idea" rows="4"
+                                placeholder="e.g., A mobile app that connects local farmers directly with consumers..."
+                                required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <input type="text" id="industry" name="industry"
+                                    placeholder="e.g., AgriTech, FinTech, HealthTech" />
+                            </div>
+                            <div class="form-group">
+                                <label for="market">Target Market</label>
+                                <input type="text" id="market" name="market"
+                                    placeholder="e.g., United States, Global" />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <span>Analyze My Idea</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L2 9L16 16L30 9L16 2Z" fill="url(#footerGradient1)" />
+                            <path d="M2 23L16 30L30 23L16 16L2 23Z" fill="url(#footerGradient2)" />
+                            <defs>
+                                <linearGradient id="footerGradient1" x1="2" y1="2" x2="30" y2="16"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#667EEA" />
+                                    <stop offset="1" stop-color="#764BA2" />
+                                </linearGradient>
+                                <linearGradient id="footerGradient2" x1="2" y1="16" x2="30" y2="30"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F093FB" />
+                                    <stop offset="1" stop-color="#F5576C" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">Feasibility AI</span>
+                    </div>
+                    <p class="footer-tagline">
+                        AI-powered startup feasibility analysis for smarter entrepreneurial decisions
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#demo">Demo</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#careers">Careers</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#security">Security</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Feasibility AI. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67 0-.18 0-.35-.01-.53A8.35 8.35 0 0020 3.92a8.18 8.18 0 01-2.36.65 4.12 4.12 0 001.8-2.27 8.22 8.22 0 01-2.6 1 4.1 4.1 0 00-7 3.74A11.65 11.65 0 011.39 2.62a4.1 4.1 0 001.27 5.47 4.07 4.07 0 01-1.86-.51v.05a4.1 4.1 0 003.29 4.02 4.1 4.1 0 01-1.85.07 4.1 4.1 0 003.83 2.85A8.23 8.23 0 010 16.28a11.62 11.62 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M18.52 0H1.48C.66 0 0 .65 0 1.45v17.1C0 19.35.66 20 1.48 20h17.04c.82 0 1.48-.65 1.48-1.45V1.45C20 .65 19.34 0 18.52 0zM5.93 17.04H2.96V7.5h2.97v9.54zM4.45 6.2a1.72 1.72 0 110-3.43 1.72 1.72 0 010 3.43zm12.59 10.84h-2.97v-4.64c0-1.11-.02-2.53-1.54-2.53-1.55 0-1.78 1.2-1.78 2.45v4.72H8.78V7.5h2.85v1.3h.04c.4-.75 1.36-1.54 2.8-1.54 3 0 3.55 1.97 3.55 4.53v5.25z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 0C4.48 0 0 4.58 0 10.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.28 9.28 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.25 10.25 0 0020 10.25C20 4.58 15.52 0 10 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Modal -->
+    <div class="modal" id="loadingModal">
+        <div class="modal-content glass-card">
+            <div class="loader"></div>
+            <h3>Analyzing Your Startup Idea...</h3>
+            <p>Our AI agents are working on your feasibility report</p>
+            <div class="progress-steps">
+                <div class="progress-step active">
+                    <div class="step-icon">✓</div>
+                    <div class="step-text">Extracting insights</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-icon">⏳</div>
+                    <div class="step-text">Analyzing market</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-icon">⏳</div>
+                    <div class="step-text">Evaluating competition</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-icon">⏳</div>
+                    <div class="step-text">Generating report</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

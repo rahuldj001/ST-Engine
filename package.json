@@ -1,0 +1,24 @@
+{
+    "name": "ai-startup-feasibility-engine",
+    "version": "1.0.0",
+    "description": "Production-ready FastAPI application for AI-powered startup feasibility analysis",
+    "main": "main.py",
+    "scripts": {
+        "start": "python main.py",
+        "dev": "uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+        "init-db": "python scripts/init_db.py",
+        "test": "python scripts/test_analysis.py"
+    },
+    "keywords": [
+        "fastapi",
+        "ai",
+        "startup",
+        "feasibility",
+        "langchain",
+        "groq",
+        "rag",
+        "multi-agent"
+    ],
+    "author": "",
+    "license": "MIT"
+}
