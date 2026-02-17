@@ -44,6 +44,14 @@ An intelligent multi-agent system that analyzes startup ideas and generates comp
 - Embedded search results in LLM context
 - Real-time trend analysis
 
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/3b1f4432-a73a-4bdc-9768-f5dbd9f59f06" />
+
+
+
+
+
+
+
 ### 📊 Structured Output
 ```json
 {
