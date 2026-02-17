@@ -22,7 +22,7 @@ Returns basic API information.
 ```json
 {
   "message": "AI Startup Feasibility Engine API",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "docs": "/docs",
   "health": "/health"
 }
@@ -40,7 +40,7 @@ Check the health status of the API and database connection.
 ```json
 {
   "status": "healthy",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "database_connected": true
 }
 ```
