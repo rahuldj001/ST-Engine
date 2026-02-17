@@ -1,19 +1,30 @@
-"""Agents package for multi-agent architecture"""
-from agents.base_agent import BaseAgent
-from agents.planner_agent import PlannerAgent
-from agents.analysis_agents import MarketAnalysisAgent, CompetitionAgent, RevenueAgent
-from agents.strategy_agents import CostAgent, GTMAgent, TargetAudienceAgent
-from agents.evaluation_agents import SuccessProbabilityAgent, CriticAgent
+"""Agents package for multi-agent architecture."""
+
+from importlib import import_module
 
 __all__ = [
     "BaseAgent",
     "PlannerAgent",
-    "MarketAnalysisAgent",
-    "CompetitionAgent",
-    "RevenueAgent",
-    "CostAgent",
+    "MarketIntelligenceAgent",
+    "FinancialStrategyAgent",
     "GTMAgent",
-    "TargetAudienceAgent",
     "SuccessProbabilityAgent",
-    "CriticAgent"
+    "CriticAgent",
 ]
+
+_MODULE_MAP = {
+    "BaseAgent": "agents.base_agent",
+    "PlannerAgent": "agents.planner_agent",
+    "MarketIntelligenceAgent": "agents.market_intelligence",
+    "FinancialStrategyAgent": "agents.financial_strategy",
+    "GTMAgent": "agents.strategy_agents",
+    "SuccessProbabilityAgent": "agents.evaluation_agents",
+    "CriticAgent": "agents.evaluation_agents",
+}
+
+
+def __getattr__(name: str):
+    if name not in _MODULE_MAP:
+        raise AttributeError(f"module 'agents' has no attribute '{name}'")
+    module = import_module(_MODULE_MAP[name])
+    return getattr(module, name)

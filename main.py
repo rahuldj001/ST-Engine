@@ -48,7 +48,7 @@ async def lifespan(app: FastAPI):
 # Initialize FastAPI app
 app = FastAPI(
     title=os.getenv("APP_NAME", "AI Startup Feasibility Engine"),
-    version=os.getenv("APP_VERSION", "1.0.0"),
+    version=os.getenv("APP_VERSION", "1.2.0"),
     description="Production-ready FastAPI application for AI-powered startup feasibility analysis with multi-agent architecture and RAG",
     lifespan=lifespan
 )
@@ -68,7 +68,7 @@ async def root():
     """Root endpoint"""
     return {
         "message": "AI Startup Feasibility Engine API",
-        "version": os.getenv("APP_VERSION", "1.0.0"),
+        "version": os.getenv("APP_VERSION", "1.2.0"),
         "docs": "/docs",
         "health": "/health"
     }
@@ -87,7 +87,7 @@ async def health_check():
     
     return HealthResponse(
         status="healthy" if db_connected else "degraded",
-        version=os.getenv("APP_VERSION", "1.0.0"),
+        version=os.getenv("APP_VERSION", "1.2.0"),
         database_connected=db_connected
     )
 
